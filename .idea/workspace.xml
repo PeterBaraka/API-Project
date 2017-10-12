@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="733a935e-b292-4bbf-949b-33ad12393854" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-commerce/database/migrations/create_item_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-commerce/database/migrations/create_payment_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/E-commerce/app/User.php" afterPath="$PROJECT_DIR$/E-commerce/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/E-commerce/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/E-commerce/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/E-commerce/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/E-commerce/resources/views/auth/register.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/E-commerce/database/migrations/create_item_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/E-commerce/database/migrations/create_payment_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/E-commerce/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/E-commerce/app/Providers/AppServiceProvider.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,9 +20,21 @@
       <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="374">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/E-commerce/app/Providers/AppServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="e#33#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +42,8 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/E-commerce/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -49,32 +59,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_item_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_item_table.php">
+      <file leaf-file-name="2017_10_12_072124_create_item_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072124_create_item_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="549">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_sales_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php">
+      <file leaf-file-name="2017_10_12_072207_create_payment_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072207_create_payment_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="13" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="549">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_payment_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_payment_table.php">
+      <file leaf-file-name="2017_10_12_072225_create_sales_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072225_create_sales_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="82" lean-forward="false" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
-              <folding />
+            <state relative-caret-position="510">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+              <folding>
+                <element signature="e#7#45#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,9 +113,13 @@
         <option value="$PROJECT_DIR$/E-commerce/app/User.php" />
         <option value="$PROJECT_DIR$/E-commerce/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/E-commerce/.env" />
+        <option value="$PROJECT_DIR$/E-commerce/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/E-commerce/database/migrations/create_item_table.php" />
-        <option value="$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php" />
+        <option value="$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072124_create_item_table.php" />
         <option value="$PROJECT_DIR$/E-commerce/database/migrations/create_payment_table.php" />
+        <option value="$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072207_create_payment_table.php" />
+        <option value="$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php" />
+        <option value="$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072225_create_sales_table.php" />
       </list>
     </option>
   </component>
@@ -112,6 +128,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -156,12 +175,6 @@
               <item name="API-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="API-Project" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="E-commerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="API-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="E-commerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -170,19 +183,6 @@
               <item name="E-commerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="API-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="E-commerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="API-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="E-commerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -209,6 +209,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="733a935e-b292-4bbf-949b-33ad12393854" name="Default" comment="" />
@@ -217,12 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507788039026</updated>
       <workItem from="1507788040559" duration="1526000" />
-      <workItem from="1507789587770" duration="1567000" />
+      <workItem from="1507789587770" duration="3440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3093000" />
+    <option name="totallyTimeSpent" value="4966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -313,26 +316,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/E-commerce/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/E-commerce/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -345,27 +340,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_item_table.php">
+    <entry file="file://$PROJECT_DIR$/E-commerce/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_071946_test_migrate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php">
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_item_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072124_create_item_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_payment_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="82" lean-forward="false" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072207_create_payment_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/create_sales_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E-commerce/database/migrations/2017_10_12_072225_create_sales_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
