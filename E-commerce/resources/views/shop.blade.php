@@ -41,7 +41,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li> <a href="{{ route ('login') }}""> LOGIN</a></li>
+        <li> <a href="{{ route ('login') }}"> LOGIN</a></li>
         <li> <a href="{{ route ('register') }}"> REGISTER</a></li>
         <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> CART</a></li>
         
@@ -71,7 +71,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
+                            <img src="images/AdidasNemezizMessi£240.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$24.99</h4>
                                 <h4><a href="#">First Product</a>
@@ -93,7 +93,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
+                            <img src="images/AdidasNemezizMessi£240.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$64.99</h4>
                                 <h4><a href="#">Second Product</a>
@@ -115,7 +115,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnailone">
-                            <img src="http://placehold.it/320x150" alt="">
+                            <img src="images/NikeMagistaObraII£250.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$74.99</h4>
                                 <h4><a href="#">Third Product</a>
@@ -137,7 +137,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnailone">
-                            <img src="http://placehold.it/320x150" alt="">
+                            <img src="images/NikeTiempoLegendVII£200.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
                                 <h4><a href="#">Fourth Product</a>
