@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
  
-  <title></title>
+  <title> BootsForU</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -205,9 +206,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li> <a href="{{ route('login') }}">LOGIN</a></li>
-        <li><a href="{{ route('register') }}">REGISTER</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> CART</a></li>
+        <li> <a href="{{ route ('login') }}""> LOGIN</a></li>
+        <li> <a href="{{ route ('register') }}"> REGISTER</a></li>
+        <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> CART</a></li>
         
       </ul>
     </div>
@@ -220,7 +221,8 @@
   <form>
     
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Shop Now</button>
+        <a href="{{ route ('shop') }}" class="btn btn-danger">SHOP NOW</a>
+
       </div>
     </div>
   </form>

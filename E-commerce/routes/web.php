@@ -15,7 +15,17 @@ Route::get('/', function () {
     return view('home1');
 });
 
+Route::get('about', function () {
+    return view('about');
+});
+
+
+
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home1', 'firstcontroller@home1')->name('home1');
+//Route::get('/home1', 'HomeController@index')->name('home1');
+Route::get('/shop', 'PagesController@shop')->name('shop');
+
+
