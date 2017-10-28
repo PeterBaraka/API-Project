@@ -55,14 +55,14 @@
 
         <div class="row">
 
-            <div class="col-md-3">
-                <p class="lead">BootsForU</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Nike</a>
-                    <a href="#" class="list-group-item">Adidas</a>
-                    <a href="#" class="list-group-item">Puma</a>
-                </div>
-            </div>
+            {{--<div class="col-md-3">--}}
+                {{--<p class="lead">BootsForU</p>--}}
+                {{--<div class="list-group">--}}
+                    {{--<a href="#" class="list-group-item">Nike</a>--}}
+                    {{--<a href="#" class="list-group-item">Adidas</a>--}}
+                    {{--<a href="#" class="list-group-item">Puma</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
 
             
                
@@ -71,88 +71,96 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="images/AdidasNemezizMessi£240.jpg" alt="">
+                            <img src="images/boots_nemeziz.jpg" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
+                                <h4 class="pull-right">$250</h4>
+                                <h4><a href="#">Adidas Nemeziz FG</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p>Unstoppable agility and Immeasurable grip, Adidas Nemeziz Ocean Storm Pack.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
+                            <div class="input-group-btn">
+                                {{--<a href="{{ route ('cart') }}" class="btn btn-danger">Quick buy</a>--}}
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="images/AdidasNemezizMessi£240.jpg" alt="">
+                            <img src="images/boots_cr7.jpg" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
+                                <h4 class="pull-right">$260</h4>
+                                <h4><a href="#">Nike Mercurial CR7</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Like the best player in the world you'll need the best boots, so here they are.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
+                            <div class="input-group-btn">
+                                {{--<a href="{{ route ('cart') }}" class="btn btn-danger">Quick buy</a>--}}
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnailone">
-                            <img src="images/NikeMagistaObraII£250.jpg" alt="">
+                        <div class="thumbnail">
+                            <img src="images/boots_hypervenom.jpg" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
+                                <h4 class="pull-right">$187.99</h4>
+                                <h4><a href="#">Nike Hypervenom Phantom 3</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Explosive attack, unstoppable power. The new hypervenom lock in let loose pack</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
+                            <div class="input-group-btn">
+                                {{--<a href="{{ route ('cart') }}" class="btn btn-danger">Quick buy</a>--}}
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnailone">
-                            <img src="images/NikeTiempoLegendVII£200.jpg" alt="">
+                        <div class="thumbnail">
+                            <img src="images/boots_magista.jpg" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
+                                <h4 class="pull-right">$120</h4>
+                                <h4><a href="#">Nike Magista Obra 2</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Unrivalled play making capabilities. Nike Magista Obra 2</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
+                            <div class="input-group-btn">
+                                {{--<a href="{{ route ('cart') }}" class="btn btn-danger">Quick buy</a>--}}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/boots_x.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$216.99</h4>
+                                <h4><a href="#">Adidas X</a>
+                                </h4>
+                                <p>Killer instincts in front of goal.</p>
+                            </div>
+                            <div class="input-group-btn">
+                                {{--<a href="{{ route ('cart') }}" class="btn btn-danger">Quick buy</a>--}}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/boots_ace.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$215</h4>
+                                <h4><a href="#">Adidas ACE</a>
+                                </h4>
+                                <p>Stylish play making flare. Like Paul Pogba a pair of these can be yours now!</p>
+                            </div>
+                            <div class="input-group-btn">
+                                {{--<a href="{{ route ('cart') }}" class="btn btn-danger">Quick buy</a>--}}
+
                             </div>
                         </div>
                     </div>

@@ -43,23 +43,15 @@ body {
 
 .thumbnail {
     padding: 0;
-
-     
 }
-.thumbnailone {
-
-    padding: 20px;
-    position: absolute;
-    left: 320px;
-
-}
-
-
-
 .thumbnail .caption-full {
     padding: 9px;
     color: #333;
 }
+/*.lead {*/
+    /*height: 200%;*/
+/*}*/
+
 
 footer {
     margin: 50px 0;
