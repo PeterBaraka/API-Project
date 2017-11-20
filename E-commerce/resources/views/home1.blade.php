@@ -208,7 +208,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li> <a href="{{ route ('login') }}"> LOGIN</a></li>
         <li> <a href="{{ route ('register') }}"> REGISTER</a></li>
-        <li><a href="{{ route ('cart') }}"><span class="glyphicon glyphicon-shopping-cart"></span> CART</a></li>
+        <li><a href="{{ url('/cart') }}">Cart ({{ Cart::instance('default')->count(false) }})</a></li>
         
       </ul>
     </div>
@@ -221,7 +221,7 @@
   <form>
     
       <div class="input-group-btn">
-        <a href="{{ route ('shop') }}" class="btn btn-danger">SHOP NOW</a>
+        <a href="{{ url ('/shop') }}" class="btn btn-danger">SHOP NOW</a>
 
       </div>
   

@@ -1,93 +1,134 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-md-10 col-md-offset-1">
-            <table class="table table-hover">
+@extends('layouts.master')
+
+@section('content')
+
+    <div class="container">
+        <p>
+        <h1>Your Cart</h1>
+
+        <hr>
+
+        @if (session()->has('success_message'))
+            <div class="alert alert-success">
+                {{ session()->get('success_message') }}
+            </div>
+        @endif
+
+        @if (session()->has('error_message'))
+            <div class="alert alert-danger">
+                {{ session()->get('error_message') }}
+            </div>
+        @endif
+
+        @if (sizeof(Cart::content()) > 0)
+
+            <table class="table">
                 <thead>
                     <tr>
+                        <th class="table-image"></th>
                         <th>Product</th>
                         <th>Quantity</th>
-                        <th class="text-center">Price</th>
-                        <th class="text-center">Total</th>
-                        <th> </th>
+                        <th>Price</th>
+                        <th class="column-spacer"></th>
+                        <th></th>
                     </tr>
                 </thead>
+
                 <tbody>
+                    @foreach (Cart::content() as $item)
                     <tr>
-                        <td class="col-sm-8 col-md-6">
-                        <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
-                            <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Product name</a></h4>
-                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
-                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
-                            </div>
-                        </div></td>
-                        <td class="col-sm-1 col-md-1" style="text-align: center">
-                        <input type="number" class="form-control text-center" value="1">
-                        </td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
-                        <td class="col-sm-1 col-md-1">
-                        <button type="button" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-remove"></span> Remove
-                        </button></td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-6">
-                        <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
-                            <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Product name</a></h4>
-                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
-                                <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
-                            </div>
-                        </div></td>
-                        <td class="col-md-1" style="text-align: center">
-                        <input type="number" class="form-control text-center" value="1">
-                        </td>
-                        <td class="col-md-1 text-center"><strong>$4.99</strong></td>
-                        <td class="col-md-1 text-center"><strong>$9.98</strong></td>
-                        <td class="col-md-1">
-                        <button type="button" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-remove"></span> Remove
-                        </button></td>
-                    </tr>
-                    <tr>
-                        <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
-                        <td><h5>Subtotal</h5></td>
-                        <td class="text-right"><h5><strong>$24.59</strong></h5></td>
-                    </tr>
-                    <tr>
-                        <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
-                        <td><h5>Estimated shipping</h5></td>
-                        <td class="text-right"><h5><strong>$6.94</strong></h5></td>
-                    </tr>
-                    <tr>
-                        <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
-                        <td><h3>Total</h3></td>
-                        <td class="text-right"><h3><strong>$31.53</strong></h3></td>
-                    </tr>
-                    <tr>
-                        <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
+                        <td class="table-image"><a href="{{ url('shop', [$item->model->slug]) }}"><img src="{{ asset('images/' . $item->model->image) }}" alt="product" class="img-responsive cart-image"></a></td>
+                        <td><a href="{{ url('shop', [$item->model->slug]) }}">{{ $item->name }}</a></td>
                         <td>
-                        <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
-                        </button></td>
+                            <select class="quantity" data-id="{{ $item->rowId }}">
+                                <option {{ $item->qty == 1 ? 'selected' : '' }}>1</option>
+                                <option {{ $item->qty == 2 ? 'selected' : '' }}>2</option>
+                                <option {{ $item->qty == 3 ? 'selected' : '' }}>3</option>
+                                <option {{ $item->qty == 4 ? 'selected' : '' }}>4</option>
+                                <option {{ $item->qty == 5 ? 'selected' : '' }}>5</option>
+                            </select>
+                        </td>
+                        <td>${{ $item->subtotal }}</td>
+                        <td class=""></td>
                         <td>
-                        <button type="button" class="btn btn-success">
-                            Checkout <span class="glyphicon glyphicon-play"></span>
-                        </button></td>
+                            <form action="{{ url('cart', [$item->rowId]) }}" method="POST" class="side-by-side">
+                                {!! csrf_field() !!}
+                                <input type="hidden" name="_method" value="DELETE">
+                                <input type="submit" class="btn btn-danger btn-sm" value="Remove">
+                            </form>
+
+                            
+                        </td>
                     </tr>
+
+                    @endforeach
+                    <tr>
+                        <td class="table-image"></td>
+                        <td></td>
+                        <td class="small-caps table-bg" style="text-align: right">Subtotal</td>
+                        <td>${{ Cart::instance('default')->subtotal() }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="table-image"></td>
+                        <td></td>
+                        <td class="small-caps table-bg" style="text-align: right">Tax</td>
+                        <td>${{ Cart::instance('default')->tax() }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="border-bottom">
+                        <td class="table-image"></td>
+                        <td style="padding: 40px;"></td>
+                        <td class="small-caps table-bg" style="text-align: right">Your Total</td>
+                        <td class="table-bg">${{ Cart::total() }}</td>
+                        <td class="column-spacer"></td>
+                        <td></td>
+                    </tr>
+
                 </tbody>
             </table>
-        </div>
 
+            <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg">Continue Shopping</a> &nbsp;
+            <a href="{{ route ('login') }}" class="btn btn-success btn-lg">Proceed to Checkout</a>
+
+
+        @else
+
+            <h3>You have no items in your shopping cart</h3>
+            <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg">Continue Shopping</a>
+
+        @endif
+
+        <div class="spacer"></div>
+
+    </div> <!-- end container -->
+
+@endsection
+
+@section('extra-js')
+    <script>
+        (function(){
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $('.quantity').on('change', function() {
+                var id = $(this).attr('data-id')
+                $.ajax({
+                  type: "PATCH",
+                  url: '{{ url("/cart") }}' + '/' + id,
+                  data: {
+                    'quantity': this.value,
+                  },
+                  success: function(data) {
+                    window.location.href = '{{ url('/cart') }}';
+                  }
+                });
+            });
+        })();
+    </script>
+@endsection

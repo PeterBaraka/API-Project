@@ -21,12 +21,18 @@ Route::get('about', function () {
 
 
 
+Route::resource('shop', 'ProductController', ['only' => ['index', 'show']]);
+Route::resource('cart', 'CartController', ['only' => ['index', 'store', 'update', 'destroy']]);
+
+
+
+
 
 
 Auth::routes();
 
 //Route::get('/home1', 'HomeController@index')->name('home1');
-Route::get('/shop', 'PagesController@shop')->name('shop');
-Route::get('/cart', 'PagesController@cart')->name('cart');
+//Route::get('/shop', 'PagesController@shop')->name('shop');
+//Route::get('/cart', 'PagesController@cart')->name('cart');
 
 
