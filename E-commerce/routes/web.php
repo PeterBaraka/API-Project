@@ -15,10 +15,9 @@ Route::get('/', function () {
     return view('home1');
 });
 
-Route::get('about', function () {
-    return view('about');
+Route::get('register', function () {
+    return view('auth.register');
 });
-
 
 
 Route::resource('shop', 'ProductController', ['only' => ['index', 'show']]);

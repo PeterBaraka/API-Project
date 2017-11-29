@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use \Cart as Cart;
 
 class ExampleTest extends TestCase
 {
@@ -12,8 +13,16 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    /*public function testBasicTest()
     {
-        $this->assertTrue(true);
+        $this->get('/')->assertSee('Welcome to BootsForU');
+        
+    }*/
+
+     public function it_loads_the_shop_page()
+    {
+        $this->visit('/shop')
+             ->see('BootsForU')
+             ->see('Adidas Nemeziz FG');
     }
 }
